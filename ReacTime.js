@@ -11,11 +11,14 @@ client.on("ready", () => {
 client.on('message', message => {
   let channel = message.channel;
   let roles = message.guild.roles;
+  // find specific role - enter name of a role you create here
+    let testRole = roles.find('name', '<name of role>');
+
   //if (remainTime == 0) {
     // overwrites 'ADD_REACTIONS' role, only on this specific channel
     channel.overwritePermissions(
-        testRole,
-        { 'ADD_REACTIONS': false },
+       // <name of role> 
+         'ADD_REACTIONS': false },
         // optional 'reason' for permission overwrite
         'Timer over!'
     )
