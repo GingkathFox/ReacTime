@@ -1,1 +1,5 @@
-
+{
+  "token": "TOKEN-HERE",
+  "channel": "CHANNEL-ID",
+  "prefix": "!t"
+}
