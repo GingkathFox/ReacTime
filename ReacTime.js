@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const timeParser = require("./timeParser.js");
 const { token, channel, prefix } = require('./config.json');
 const client = new Discord.Client();
 
