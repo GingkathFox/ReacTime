@@ -14,7 +14,7 @@ client.on('message', message => {
   
   setTimeout(() => message.channel.send("@everyone /nThe poll is over!"), parsedTime);
 
-   if (message.content === '${prefix}ping') {
+   if (message.content === `${prefix}ping`) {
         message.channel.send('Pong.');
     }
 });
