@@ -12,9 +12,9 @@ client.on("ready", () => {
 client.on('message', message => {
   let channel = message.channel;
   
-  setTimeout(() => message.channel.send("@everyone /nThe poll is over!), parsedTime);
+  setTimeout(() => message.channel.send("@everyone /nThe poll is over!"), parsedTime);
 
-   if (message.content === '${prefix}ping') {
+   if (message.content === `${prefix}ping`) {
         message.channel.send('Pong.');
     }
 });
